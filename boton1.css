@@ -1,0 +1,48 @@
+/* Estilo general del body */
+body {
+    background: linear-gradient(135deg, #ffebcd, #ffe4b5); /* Nuevo fondo */
+    font-family: Arial, sans-serif;
+
+    /* Centrando el botón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ocupa toda la pantalla */
+    margin: 0;
+}
+
+/* Botón principal */
+button {
+    background: linear-gradient(45deg, #af4c99, #c581c7);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    animation: latido 2s infinite;
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+    background: linear-gradient(45deg, #6c388e, #b866bb);
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Efecto al hacer clic */
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación */
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
